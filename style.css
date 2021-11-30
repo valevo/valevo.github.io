@@ -1,0 +1,87 @@
+
+
+/* body {
+    background-color: #ffce06;
+} */
+
+@font-face {    
+  font-family: 'whyte-light';       
+src: url('https://static1.squarespace.com/static/5efdd978995b38650d2d3838/t/5f05e65f4621c5539ac497f7/1594222175390/Whyte-Light.woff');
+  }
+
+@font-face { 
+  font-family: 'whyte-bold';       
+src: url('https://static1.squarespace.com/static/5efdd978995b38650d2d3838/t/5f05e6887714891102fc8876/1594222217075/Whyte-Bold.woff');
+}
+
+
+* {font-family: 'whyte-light';}
+
+
+
+
+
+body {
+    color: white;
+    background-color: black;
+/*     background-image:url('./students.gif');
+    background-position: center;
+    background-size: cover; */
+}
+
+div::after {
+  content: "";
+  background: url('./students.gif');
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+div {
+    /* top right bottom left      */
+    margin: 10% 25% 0 10%;
+/*     margin: 100px; */
+/*     padding: 100px; */
+}
+
+
+h1 {
+    font-family: 'whyte-bold';
+    font-size: 50;
+}
+
+hr {
+    color:  grey;
+    background-color:  black;    
+}
+
+
+img {
+    display: block;
+    margin: auto;
+    align: left;
+}
+
+
+
+a:link {
+  color: #ffce06;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffce06;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #183748;
+  background-color: #ffce06;
+  text-decoration: none;
+}
