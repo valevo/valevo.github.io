@@ -1,0 +1,157 @@
+
+
+/* body {
+    background-color: #ffce06;
+} */
+
+@font-face {    
+  font-family: 'whyte-light';       
+src: url('https://static1.squarespace.com/static/5efdd978995b38650d2d3838/t/5f05e65f4621c5539ac497f7/1594222175390/Whyte-Light.woff');
+  }
+
+@font-face { 
+  font-family: 'whyte-bold';       
+src: url('https://static1.squarespace.com/static/5efdd978995b38650d2d3838/t/5f05e6887714891102fc8876/1594222217075/Whyte-Bold.woff');
+}
+
+* {font-family: 'whyte-light';}
+
+
+body {
+    color: white;
+    background-color: black;
+/*     background-image:url('./students.gif');
+    background-position: center;
+    background-size: cover; */
+}
+
+
+/* -------------------------------------------------- */
+
+/* div {
+    max-width: 80%;
+    margin: auto;
+} */
+
+* {
+    /* top right bottom left      */
+/*     margin: 7% 30% 0 7%; */
+/*         background-color: red; */
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+h1:hover {
+    filter: blur(3px);
+/*     filter: grayscale(1); */
+/*     filter: saturate(5.0);     */
+}
+
+h1 {
+    font-family: 'whyte-bold';
+    font-size: 50;
+    max-width: 70%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'whyte-light';
+    font-size: 30;
+}
+
+hr {
+    color:  white;
+    background-color:  black;
+    align: left;
+}
+
+h2 
+
+/* -------------------------------------------------- */
+
+img {
+    display: block;
+    margin: auto;
+    align: left;
+}
+
+/* -------------------------------------------------- */
+
+p {
+    margin-bottom: 2%;
+    width: 100%;
+    padding: 0 2% 0 2%;   
+}
+
+ul {
+    list-style: none;
+    
+/*     text-align: center; */
+}
+
+li {
+    max-width: 50%;
+    background-color: red;
+
+    margin-top: 4%;
+    
+/*     margin-left: 0%; */
+/*     display: flex;
+    justify-content: space-between; */
+}
+
+
+
+
+li::before {
+    content: "+";
+    font-size: 20;
+    justify-content: center;
+}
+
+li:hover {
+    
+}
+
+
+.text {
+    font-size: 20;
+    width: 100%;
+/*     display: inline-block;     */
+}
+
+.time {
+    font-family: 'whyte-bold';
+    font-size: 20;
+    color: grey;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+/* -------------------------------------------------- */
+
+
+
+a:link {
+  color: #ffce06;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffce06;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #183748;
+  background-color: #ffce06;
+  text-decoration: none;
+}
