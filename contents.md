@@ -3,12 +3,12 @@
 
  - LAWKI online
    - link/iframe? 
- - LAWKI workshops
  
  - LAWKI Alive
    - performance videos
    - explanation videos
-   - 
+   - LAWKI workshops
+
  - LAWKI NOW
    - 
  - SABIO
