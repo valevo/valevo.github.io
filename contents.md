@@ -1,20 +1,34 @@
 # Contents to be Integrated
 
 
+ - LAWKI online
+   - link/iframe? 
+ - LAWKI workshops
+ 
  - LAWKI Alive
    - performance videos
    - explanation videos
    - 
  - LAWKI NOW
+   - 
  - SABIO
  - Bachelor Supervisions
+   - ADS thesis award link
+   - scripties.uva.nl links
+   -  
  - ConConCor
- - AlgoRhythmics
+   - PDF 
  - Master's Thesis
+   - PDF 
+   - summary of MoL experiences
  - Referring Expressions
+   - PDF 
+ 
+ - AlgoRhythmics
+
  - TravisFoundation
- - LAWKI online
- - LAWKI workshops
+   - outputs? 
+
 
 
 
@@ -23,4 +37,6 @@
  - contacts, websites (GitHub, etc)
  - about myself, mission statement -> VV section
  - education -> VV section
- - past work
+ - work contracts
+ - outputs at INDELab?
+ - 
