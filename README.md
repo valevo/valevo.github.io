@@ -46,6 +46,8 @@
    let left and right container overflow: scroll on their own if necessary
  
  
+ - add Komoot routes to personal page 
+ 
  
  ## `v2`
 
