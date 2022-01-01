@@ -1,89 +1,115 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <script type="text/javascript">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="new.css">
+            <script type="text/javascript">
+            var borderStyle = "1px solid var(--foreground)";
+            
+            var curID = "";
+                
             function putInRight(id) {
+                
+                if (curID == id) {
+                    document.querySelectorAll('.item').forEach(
+                    function(el) {
+                        el.style.borderTop = "";
+                        el.style.borderBottom = "";
+                        el.style.borderRight = "";
+                        }
+                    );
+                    return
+                }
+                
+                curID = id;
                 
                 // take care of .item elements -> left panel
                 document.querySelectorAll('.item').forEach(
                     function(el) {
-//                         el.style.borderTop = "none";
-//                         el.style.borderBottom = "none";
-//                         el.style.borderRight = "1px solid #dbdcdd";
-                        el.style.filter = null;
+                        el.style.borderTop = "";
+                        el.style.borderBottom = "";
+                        el.style.borderRight = "";
+                        el.style.color = "var(--foreground)";
+
                     }
                 );
   
 //                 document.getElementById("header").style.filter = null;
   
-                if (id != "header") {
-                    document.getElementById(id).style.filter = "blur(2px)";
-                }
-//                 document.getElementById(id).style.borderRight = "1px dotted #dbdcdd";
-//                 document.getElementById(id).style.borderBottom = "1px solid white";
-//                 document.getElementById(id).style.borderTop = "1px solid white";
+//                 if (id != "header") {
+//                     document.getElementById(id).style.filter = "blur(2px)";
+//                 }
+                document.getElementById(id).style.borderRight = "";
+                document.getElementById(id).style.borderBottom = borderStyle;
+                document.getElementById(id).style.borderTop = borderStyle;
+                document.getElementById(id).style.color = "#7d00b3";
 
-                // take care of .detailelements -> right panel
-                document.querySelectorAll('.detail').forEach(
-                    function(el) {
-                        el.style.display = "none";
-                        }
-                );
+
+//                 // take care of .detailelements -> right panel
+//                 document.querySelectorAll('.detail').forEach(
+//                     function(el) {
+//                         el.style.display = "none";
+//                         }
+//                 );
                 
-                document.getElementById(id+"-detail").style.display = "grid";
+//                 document.getElementById(id+"-detail").style.display = "grid";
             }
         </script>
-    </head>
-    <body>  <!--     style="padding: 40px;"> -->
-        <div id=header onClick="putInRight(this.id);">
-            <h1>Valentin Vogelmann</h1>
-            <hr>
-        </div>
-        <div class=left>
-            <div class=item id=lawki-alive onClick="putInRight(this.id);">
+
+</head>
+  <body>
+      <div id="top">
+        <h1 class=clickable>Valentin Vogelmann</h1>
+      </div>
+      <div id=left>
+            <div class="item clickable" id=lawki-alive onClick="putInRight(this.id);">
                 <h3>LAWKI Alive</h3>
                 the second iteration of LAWKI
             </div>
-            <div class=item id=conconcor onClick="putInRight(this.id);">
+            <div class="item clickable" id=conconcor onClick="putInRight(this.id);">
                 <h3>ConConCor</h3>
                 co-authored with colleagues from CulturalAI lab
             </div>
-            <div class=item id=lawki-now onClick="putInRight(this.id);">
+            <div class="item clickable" id=lawki-now onClick="putInRight(this.id);">
                 <h3>LAWKI NOW</h3>
                 the first iteration of LAWKI
             </div>
-            <div class=item id=sabio onClick="putInRight(this.id);">
+            <div class="item clickable" id=sabio onClick="putInRight(this.id);">
                 <h3>SABIO</h3>
                 the <b>S</b>oci<b>A</b>l <b>BI</b>as <b>O</b>bservatory
             </div>
-        </div>
-        
-        <div class=right>
-            <div class=detail id=header-detail  style="display: grid;">
-                 <img src="resources/VV.jpg" alt="VV">
-                <p>Hi! I'm Valentin.</p>
+            <div class="item clickable" id=supervision onClick="putInRight(this.id);">
+                <h3>Supervision</h3>
+                B.Sc. AI thesis (co-)supervision
+            </div>
+            <div class="item clickable" id=mol onClick="putInRight(this.id);">
+                <h3>Master of Logic</h3>
+                
+            </div>
+       </div>
+      
+      
+      
+      
+    <div id=right>
+        <div class="slide-container">
+          <div class="slide">
+            <img src="../resources/VV.jpg" alt="VV">
+                <p>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices, lorem eu imperdiet euismod, augue turpis commodo nibh, euismod ornare est odio sed elit. Duis luctus lorem nibh, quis fermentum orci tincidunt non. Curabitur ut luctus ipsum, eget mattis enim. Aliquam porta erat in quam egestas imperdiet. Morbi lacinia eget est ac varius. Donec mollis, mi eget dapibus sollicitudin, justo leo convallis ex, dictum elementum dui ante vitae elit.
+              </p>
                 
 <!--                  <iframe src="https://www.w3schools.com/html/html_iframe.asp" title="komoot" height="200" width="300"></iframe>  -->
-                <iframe src="https://www.w3schools.com/html/html_iframe.asp" height="200" width="300" title="Iframe Example"></iframe>
-            </div>
-            
-            <div class=detail id=conconcor-detail>
-                <embed src= "resources/ConConCor.pdf" type="application/pdf"
-                       width="100%" height= "700">
-            </div>
-
-            <div class=detail id=lawki-alive-detail>
-                 <img src="resources/lawki_alive.jpg" alt="LAWKI Alive">
-            </div>
-            <div class=detail id=lawki-now-detail>
-                <video width="100%" autoplay loop controls muted>
-                    <source src="resources/LAWKI-NOW-video.mp4" type="video/mp4">
-                </video> 
-                <p>Together with art collective <a href="http://www.ark.amsterdam" target="_blank">ARK</a>, we made LAWKI NOW!</p>
-            </div>
 
             
+          </div>
+          <div class="slide">                
+              <iframe src="https://www.w3schools.com/html/html_iframe.asp" height="200" width="300" title="Iframe Example"></iframe>  
+          </div>
+
         </div>
-    </body>
+<!--                 <div id=arrow></div> -->
+
+     </div>
+  </body>
 </html>
